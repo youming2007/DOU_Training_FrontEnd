@@ -99,8 +99,8 @@ nav a{
 	font-weight:800;
 	padding:15px 10px;
 }
-#social-icon{
-	width:200px;
+.social-icon{
+	width:25px;
 	height:25px;
 	margin: 0 5px;
 }
