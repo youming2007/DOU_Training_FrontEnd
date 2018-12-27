@@ -1,5 +1,9 @@
+/****************************
+PAGE PORTFOLIO
+*****************************/
 body {
 	font-family: arial;
+	margin: 0;
 }
 a {
 	text-decoration: none;
@@ -41,6 +45,10 @@ ul {
 	margin: 0;
 }
 header {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
 	background: #6ab47b;
 	border-color: #599a68;
 }
@@ -52,7 +60,6 @@ h1 {
 	font-size: 1.75em;
 	font-weight: normal;
 	line-height: 0.8em;
-	padding-top: 10px;
 }
 h2 {
 	font-size: 0.75em;
@@ -65,6 +72,17 @@ nav {
 	padding: 10px 0;
 	margin: 20px 0 0;
 }
+nav ul {
+	margin: 0 10px;
+	padding: 0;
+}
+nav li {
+	display: inline-block;
+}
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
 nav a, nav a:visited {
 	color: #fff;
 }
@@ -75,6 +93,51 @@ footer {
 	font-size: 0.75em;
 	text-align: center;
 	clear: both;
-	padding-top: 50px;
 	color: #ccc;
+}
+.social-icon {
+	width: 35px;
+	height: 35px;
+	margin: 0 3px;
+}
+
+/****************************
+PAGE ABOUT
+*****************************/
+
+.profile-photo {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 30px;
+	border-radius: 100%;
+}
+h3 {
+	margin: 0 0 1em 0;
+}
+
+/****************************
+PAGE CONTACT
+*****************************/
+
+.contact-info {
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 25px;
+	margin: 0 0 10px;
+}
+.contact-info li.phone a {
+	background-image: url('../img/phone.png');
+}
+.contact-info li.email a {
+	background-image: url('../img/mail.png');
+}
+.contact-info li.facebook a {
+	background-image: url('../img/facebook.png');
 }
