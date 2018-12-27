@@ -1,0 +1,187 @@
+html, body{
+    font-family: 'Fira Sans',monospace;
+    margin: 0px auto;
+    color: #999;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/**********/
+/* HEADING*/
+/**********/
+header{
+    width: 100%;    
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    
+}
+
+h1{
+    margin: 15px 0;
+    line-height: 0.8em;
+    font-size: 1.75em;
+}
+
+#logo p{
+    margin: -5px 0 0 ;
+}
+
+#logo{
+    padding: 0px;
+    text-align: center;    
+}
+
+
+
+
+nav{
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding:  10px;
+}
+nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 10px;
+}
+
+nav li a:hover{
+    color: darkgreen;
+}
+
+
+@media screen and (min-width: 660px) {
+
+  /**********************************
+  HEADER
+  ***********************************/
+
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+  
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px;
+  }
+
+  
+}
+
+
+/*************/
+/***CONTENT***/
+
+#wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+#list-img{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#list-img li{
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: antiquewhite;
+    color: #bdc3c7;
+}
+
+#list-img li a p{
+    margin: 0px;
+    padding: 5%;
+    font
+}
+
+
+
+/************
+    FOOTER
+************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+
+
+/**************
+    COLOR
+**************/
+
+header{
+    background: #6ab47b;
+    background-color: #599a68;
+}
+
+nav{
+    background: #599a68;
+}
+
+h1, header p {
+    color: #fff;
+}
+
+a{
+    color: #6ab47b;
+}
+
+nav{
+    color: #599a68;
+}
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.current, nav a:hover {
+  color: #32673f;
+}
