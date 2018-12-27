@@ -1,0 +1,57 @@
+/******* THỰC HIỆN KHI KÍCH THƯỚC NHỎ HƠN 480px ******/
+@media all and (min-width: 480px){
+   /*** Căn chỉnh số lượng pic trong 1 dòng ***/
+   #ds_img li {
+    width: 27%;
+  }
+  
+  /* Xóa khoảng trống bên trái bức ảnh thứ 4 khi đẩy bức 3 lên trên  
+  		Nếu có nhiều hơn 8 pic thì thay 4 = 4n*/
+  #ds_img li:nth-child(4) {
+    clear: left;
+  }
+
+  .profile-photo {
+    float: left;
+    /* Chia lại khoảng cách giữa các pic khi thay đổi responsive */
+    margin: 0 5% 80px 0;
+  }
+  
+}
+
+
+/******* THỰC HIÊN KHI KÍCH THƯỚC NHỎ HƠN 670px ******/
+@media all and (min-width: 670px){
+  /* Thay đổi thanh nav */
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+  
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    margin-left: 60px;
+  }
+  
+  header {
+    border-bottom: 5px;
+    margin-bottom: 60px;
+  }
+
+}

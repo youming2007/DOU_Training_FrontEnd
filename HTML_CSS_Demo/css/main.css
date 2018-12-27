@@ -1,0 +1,213 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  width: 100%;
+  float: left;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/**********************************
+NAV
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul {  
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav a {
+  font-weight: 700;
+  padding: 10px;
+}
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 50px;
+  color: #ccc;
+  clear: both;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+/**********************************
+COLORS
+***********************************/
+
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+nav {
+  background: #599a68;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+a {
+  color: #6ab47b;
+}
+
+nav a, nav a:visited {
+  color: #fff;
+}
+
+nav a.selected, nav a:hover {
+  color: orange;
+}
+
+/******************
+ TRANG INDEX
+ ******************/
+ #ds_img {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+ #ds_img li {
+  width: 44%;
+  margin: 3%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+  float: left;
+ }
+
+ #ds_img p {
+  text-align: center;
+ }
+
+ #ds_img li a p {
+  margin: 0%;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7
+}
+
+/*********** 
+TRANG ABOUT 
+************/
+
+.about-cuong-pic {
+  object-fit: cover;
+  border-radius: 100%;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+/***********
+TRANG CONTACT
+************/
+
+.contact-detail {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  list-style: none;
+}
+
+.contact-detail a{
+  display: block;
+  min-height: 20px;
+  padding: 0 0 0 20px;
+  margin: 0 0 10px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+
+#sdt a {
+  background-image: url('../img/phone.png');
+}
+
+#email a {
+  background-image: url('../img/mail.png');
+}
+
+#fb a {
+  background-image: url('../img/facebook.png');
+}
+
+
+
+
+
+
+
+
