@@ -1,82 +1,70 @@
+
+/********************
+--------all----------
+*********************/
 body {
 	margin: 0px;
 	font-family: 'Open Sans', sans-serif;
 	color: #999;
+	background-color: #E0F8E6;
 }
-header {
+
+#header {
 	overflow: auto;
 	background: #6ab47b;
-  	width: 100%;
-  	clear: both;
+	height: 100%;
 }
-#header h1 {
+
+#header h1{
+	
+}
+
+#header h1 a {
+  	text-decoration : none;
+	color: #FBEFEF;
 	float: left;
   	font-family: 'Changa One', sans-serif;
-  	padding-left: 5%;
-}
-#header h1 a {
-	text-decoration : none;
-	color: #FBEFEF;
+  	font-style: bold;
+  	padding-left: 5%;	
 }
 
 #header h2 {
 	clear: both;
 	color: #FBEFEF;
 	float: left;
-  	font-size: 0.75em;
+  	font-size: 0.8em;
  	font-style: bold;
   	padding-left: 5%;
 }
+
 #header nav ul {
-	clear: right;
 	text-align: right;
-	padding-right: 3%;
+	padding-right: 5%;
+	padding-top: 1%;
 	list-style: none;
 	color: #fff;
 }
-#header nav ul li {
+
+#header nav li {
 	display: inline-block;
 	width: 80px;
-	height: 30px;
-	line-height: 100px;
+	height: 20px;
 }
+
 #header nav a:hover{
   color: #32673f;
 }
+
 #header nav ul li a {
 	font-family: sans-serif;
 	font-weight: 800;
-  	padding: 15px 10px;
   	text-decoration : none;
   	color: #fff;
 }
 
-#main {
-	padding: 7%;
-  	margin: 0;
-  	list-style: none;
-}
-
-#main li {
-  	margin: 3%;
-  	background-color: #CEECF5;
-  	display: inline-table;
-}
-
-#main li a p {
-	text-align: center;
-  	margin: 0;
-  	padding: 5%;
-  	color: #BDBDBD;
-}
-#main li a{
-	text-decoration : none;
-}
 footer{
 	text-align: center;
-	padding: 0;
 	height: 30px;
-	width: 100%;
 	background: #6ab47b;
 	font-family: sans-serif
 	font-weight: 800;
@@ -89,50 +77,86 @@ footer a {
 }
 
 
+/******************
+-------Index-------
+*******************/
+#main {
+	padding: 5% 10% 5% 10%;
+  	margin: 0;
+  	list-style: none;
+}
+
+#main li {
+  	margin: 2%;
+  	background-color: #CEECF5;
+  	display: inline-table;
+}
+
+#main li a{
+	text-decoration : none;
+	
+}
+
+#main li a p {
+	text-align: center;
+  	margin: 0;
+  	color: #BDBDBD;
+}
+
+
+/******************
+-------About-------
+*******************/
 .avatar{
 	float: left;
-    margin: 0 5% 80px 0;
-    display: block;
-  	max-width: 250px;
-  	margin: 0 auto 30px;
+  	max-width: 150px;
   	border-radius: 100%;
   	margin-right: 5%;
 }
-.ab {
-	padding: 20% 10% 20% 10%;
+.aboutt {
+	padding: 5% 10% 10% 10%;
 	text-align: justify;
-	font-size: 1.17em;
+	font-size: 1.0em;
 }
-.ab a{
+.aboutt a{
 	text-decoration : none;
-	color: #999;
+	color: #6ab47b;
 	font-style: italic;
 }
 
 
+/******************
+-------Contact-----
+*******************/
 .contacttt {
-	width: 100%;
-	height: 700px;
-	padding: 15% 15% 15% 15%;
-	background: #fff;
+	overflow: auto;
+	height: 400px;
+	padding-top: 2%;
 }
+
 .main1 {
 	text-align: justify;
 	float: left;
+	margin-left: 15%;
 	width: 40%;
-	height: 400px;
-	font-size: 1.17em;
+	font-size: 1.0em;
 }
+
 .main2{
 	margin-left: 5%;
 	float: left;
 	width: 30%;
-	height: 400px;
-
 }
+
 .main2 li{
 	margin-bottom: 10px;
 }
+
+.main2 a {
+	text-decoration : none;
+	color: #6ab47b;
+}
+
 .main2 li.sdt{
 	list-style-image: url(img/phone.png);
 }
@@ -142,12 +166,11 @@ footer a {
 .main2 li.fb{
 	list-style-image: url(img/facebook.png);
 }
-.main2 a {
-	text-decoration : none;
-	color: #6ab47b;
-}
 
 
+/******************
+----Responsive-----
+*******************/
 @media only screen and (max-width: 600px) {
  	#header nav ul{
 		text-align: center;
@@ -155,12 +178,31 @@ footer a {
 		margin: 0;
 		padding: 0;
 	}
-	#header h1 {
-  		text-align: center;
+	#header h1{
+		text-align: center;
+	}
+	#header h1 a{
   		float: none;
   	}
   	#header h2 {
   		text-align: center;
   		float: none;
+	}
+
+
+	.main2{
+		clear: both;
+		margin-left: 15%;
+		float: left;
+		width: 70%;
+	}
+	.main1 {
+		width: 70%;
+	}
+
+	.avatar{
+		margin-left: 30%;
+		float: none;
+		clear: both;
 	}
 }
