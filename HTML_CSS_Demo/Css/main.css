@@ -1,16 +1,25 @@
 body{
 	margin:0px 0px 0px 0px;
 	clear: both;
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
 }
 /*header*/
 header{
-	background-color:#88e88d;
+	background-color:#6ab47b;
 	overflow: auto;
 }
 
-header img{ 
+h1{
+	font-family: 'Open Sans', sans-serif;
+}
+
+header a{ 
+	margin-top: 1%;
+	margin-left: 1%;
 	float: left;
- 
+	text-decoration: none;
+	color: white;	
 }
 .menu_link{
 	float: right;
@@ -34,48 +43,122 @@ header img{
 .menu_link a:hover{
 	color: black;
 }
-hr{
-	background-color: green;
+.mobile{
+	background-color: #599a68;
 	margin-top: 0px;
 	height: 5px;
 	clear: both;
 }
 /*section*/
-.body_img{
-	margin-top: 5%;
-	margin-left:5%;
-	margin-right: :5%;
-}
-.body_img ul{
-	display:  inline-block;
-}
-.block_img{
-	margin-right: 4%;
-	margin-left: 5%;
-	margin-top: 2%;
-	float: left;
-	list-style: none;
-	background-color: #cdd1d6;
-	height: 300px;
-	width: 300px;
-}
-
-.block_img img{
-	height: 250px;
-	width: 300px;
-}
-
-.block_img p {
-	text-align: center;
+section{
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
 }
 /*footer*/
 footer{
 	clear: both;
+	padding-left: 40%;
+}
+footer ul li {
+	list-style: none;
+	display: inline-block;
+}
+footer ul li a img{
+	width: 50%;
+	height: auto;
 }
 footer p{
 	margin-top: 10px;
-	text-align: center;
 }
-/*Multi scren*/
+/*
+*page home
+*/
+.body_img ul li{
+	margin-right: 0.5%;
+	margin-top: 2%;
+	list-style: none;
+	display: inline-block;
+	width: 30%;
+}
+.body_img ul img{
+	height: auto;
+	width: 100%;
+}
+.body_img ul li p{
+	text-align: center;
+	height: auto;
+	width: 100%%;
+}
+/*
+*page About
+*/
+.avatar{
+	border-radius: 50%;
+	width: 150px;
+	height: 200%	;
+	float: left;
+	margin-right: 10%;
+}
+.body_page_about{
+	margin: 0% 20% 20% 20%;
+	display: inline-block;
+}
+
+.contract_about a{
+	color: green;
+}
+
+/*
+* Page Contact
+*/
+.contract_page_contact{
+	width: 40%;
+	float: left;
+	padding-left: 10%;
+}
+.contract_page_contact ul{
+	padding-left: 0px;
+}
+.contract_page_contact ul li img{	
+	width: 20px;
+}
+.contract_page_contact ul li a{
+	text-decoration: none;
+	font-size: auto;
+}
+.contract_page_contact ul li {
+	list-style: none;
+	margin-top: 2%;
+}
+
+/*
+* Responsive
+*/
+
 @media screen and (max-width: 600px) {
+	header{
+		text-align: center;
+	}
+	header a{
+		float: none;
+		clear: both;
+	}
+	.menu_link{
+		float: none;
+		background-color:#599a68;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	}
+	.menu_link ul{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.body_page_about{
+		text-align: center;
+	}
+	.body_page_about img{
+		float: none;
+		clear: both;
+	}
 }
