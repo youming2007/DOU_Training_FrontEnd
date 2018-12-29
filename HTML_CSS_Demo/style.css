@@ -75,18 +75,27 @@ footer a {
 	font-weight: 800;
 	color: #32673f;
 }
+img{
+	max-width: 100%;
+}
 
 
 /******************
 -------Index-------
 *******************/
+.container{
+	max-width: 940px;
+	margin: 0 auto;
+ 	padding: 0 5%;
+}
 #main {
-	padding: 5% 10% 5% 10%;
+	padding: 5% 15% 5% 15%;
   	margin: 0;
   	list-style: none;
 }
 
 #main li {
+	width: 28%;
   	margin: 2%;
   	background-color: #CEECF5;
   	display: inline-table;
@@ -108,13 +117,12 @@ footer a {
 -------About-------
 *******************/
 .avatar{
-	float: left;
   	max-width: 150px;
   	border-radius: 100%;
-  	margin-right: 5%;
 }
 .aboutt {
-	padding: 5% 10% 10% 10%;
+	overflow: auto;
+	padding: 5% 0 10% 0;
 	text-align: justify;
 	font-size: 1.0em;
 }
@@ -123,6 +131,17 @@ footer a {
 	color: #6ab47b;
 	font-style: italic;
 }
+.ab1{
+	padding-left: 10%;
+	margin-right: 5%;
+	float: left;
+}
+.ab2{
+	width: 60%;
+	margin-right: 5%;
+	float: left;
+}
+
 
 
 /******************
@@ -130,8 +149,9 @@ footer a {
 *******************/
 .contacttt {
 	overflow: auto;
-	height: 400px;
+	height: 500px;
 	padding-top: 2%;
+	padding-bottom: 5%;
 }
 
 .main1 {
@@ -172,6 +192,15 @@ footer a {
 ----Responsive-----
 *******************/
 @media only screen and (max-width: 600px) {
+	#main {
+		padding: 5% 5% 5% 5%;
+	}
+
+	#main li {
+		width: 45%;
+	}
+
+
  	#header nav ul{
 		text-align: center;
 		background-color: #599a68;
@@ -200,9 +229,17 @@ footer a {
 		width: 70%;
 	}
 
-	.avatar{
-		margin-left: 30%;
+}
+@media only screen and (max-width: 760px) {
+	.ab1{
+		margin-left: 25%;
 		float: none;
 		clear: both;
+	}
+	.ab2{
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+		float: none;
 	}
 }
