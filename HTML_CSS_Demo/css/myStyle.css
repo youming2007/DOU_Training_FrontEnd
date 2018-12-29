@@ -66,25 +66,132 @@ ul{
     /* background: black;
     height: 500px; */
     margin: auto;
+    padding: 35px;
 }
 
 img{
     max-width: 100%;
 }
 
-#content ul{
+#content #grid-img{
     margin: 0;
     padding: 70px 0;
 }
 
-#content li{
+#grid-img li{
     max-width: 29.3%;
     float: left;
     padding: 2%;
 }
 
+footer{
+    text-align: center;
+    clear: both;
+    color: #ccc;
+    padding-top: 100px;
+}
+
+.footer-link img{
+    max-width: 35px;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.footer-link p{
+    padding: 0;
+}
+
+#photo{
+    display: block;
+    max-width: 150px;
+    border-radius: 100%;
+    float: left;
+    margin: 35px;
+    margin-left: 5px;
+}
+
+h3{
+    color: #999;
+}
+
+#content p{
+    color: #999;
+}
+
+#primary{
+    color: #999;
+    max-width: 60%;
+    float: left;
+    margin-right: 5%;
+}
+
+#secondary{
+    color: #999;
+    float: left;
+    max-width: 30%;
+    margin-left: 5%;
+}
+
+#contact-info{
+    padding: 0;
+    margin: 0;
+}
+
+#contact-info li{
+    width: 100%;
+    float: none;
+    padding: 5px;
+    height: 50px;
+}
+
+#contact-info a{
+    color: #999;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#contact-info .phone{
+    background-image: url(../img/phone.png);
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding: 0 0 0 30px;
+}
+#contact-info .mail{
+    background-image: url(../img/mail.png);
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding: 0 0 0 30px;
+}
+#contact-info .twitter{
+    background-image: url(../img/twitter.png);
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding: 0 0 0 30px;
+}
 
 @media only screen and (max-width: 500px) {
+    #primary{
+        max-width: 100%;
+        float: none;
+        margin-bottom: 50px;
+    }
+    
+    #secondary{
+        float: none;
+        max-width: 100%;
+    }
+
+    #photo{
+        float: none;
+        margin: auto;
+    }
+
     #header{
         padding: 0;
     }
