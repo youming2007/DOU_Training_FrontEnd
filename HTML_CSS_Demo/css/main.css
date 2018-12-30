@@ -24,6 +24,13 @@ h4{
   margin: -5px 0 0;
   font-weight: normal;
 }
+#primary {
+  float: left;
+}
+
+#secondary {
+  float: left;
+}
 /*
 	Header
 */
@@ -137,7 +144,49 @@ footer {
   margin: 0 5px;
 }
 /* End Index.html */
-/*Start contact.html: */
+/* Start about.html: */
+  .profile-photo {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+}
+/* End about.html */
+/* Start contact.html: */
+  
+#secondary ul li a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+#secondary ul {
+  list-style-type: none;
+  padding: 0;
+}
+#secondary ul li.phone a {
+  background-image: url('../images/phone.png');
+}
+
+#secondary ul li.mail a {
+  background-image: url('../images/mail.png');
+}
+
+#secondary ul li.twitter a {
+  background-image: url('../images/twitter.png');
+}
+/* End contact.html */
+/* Start responsive */
+@media screen and (min-width: 480px){
+  #listImage li {
+      width: 28%;
+  }
+  #listImage li:nth-child(3n + 1) {
+    clear: left;
+  }
+
   #primary {
     width: 50%;
     float: left;
@@ -147,21 +196,9 @@ footer {
     width: 40%;
     float: right;
   }
-/* End contact.html */
-/* Start about.html: */
-  
   .profile-photo {
     float: left;
     margin: 0 5% 80px 0;
-  }
-/* End about.html */
-/* Start responsive */
-@media screen and (min-width: 480px){
-  #listImage li {
-      width: 28%;
-  }
-  #listImage li:nth-child(3n + 1) {
-    clear: left;
   }
 }
 @media screen and (min-width: 660px) {
