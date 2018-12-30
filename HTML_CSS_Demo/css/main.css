@@ -151,6 +151,9 @@ footer {
     margin: 0 auto 30px;
     border-radius: 100%;
 }
+#section-about{
+  float: left;
+}
 /* End about.html */
 /* Start contact.html: */
   
