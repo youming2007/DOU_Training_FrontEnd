@@ -15,6 +15,12 @@ a{
 a{
   color: #6ab74b;
 }
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
 header{
   background-color: #6ab74b;
   border-color: #599a68;
@@ -30,6 +36,8 @@ nav{
   background: #599a68;
 text-align: center;
 font-weight: bold;
+padding: 10px 0;
+margin: 20px 0 0;
 }
 nav a, nav a:visited{
   color:#fff;
