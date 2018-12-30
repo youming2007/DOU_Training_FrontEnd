@@ -16,6 +16,27 @@
     /* Chia lại khoảng cách giữa các pic khi thay đổi responsive */
     margin: 0 5% 80px 0;
   }
+
+  /*** Chia cột cho 2 page ABOUT và CONTACT ***/
+  #cot-1-contact {
+    width: 45%;
+    float: left;
+  }
+
+  #cot-2-contact {
+    width: 45%;
+    float: right;
+  }
+
+  #cot-1-about {
+    width: 35%;
+    float: left;
+  }
+
+  #cot-2-about {
+    width: 60%;
+    float: right;
+  }
   
 }
 
