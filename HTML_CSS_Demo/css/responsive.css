@@ -21,12 +21,16 @@
     
     #list-img li{
         width: 28.333333%;
+      
     }
     
   
     #list-img li:nth-child(3n+1){
         clear: left;
     }
+
+
+    
     /***************
     ABOUT
     ****************/
@@ -37,6 +41,11 @@
     }
 }
 
+@media screen and (max-width: 480px){
+    #list-img li:nth-child(2n+1){
+        clear: left;
+    }
+}
 @media screen and (min-width: 660px){
     /***************
     HEADER

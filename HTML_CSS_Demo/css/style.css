@@ -1,6 +1,6 @@
 html, body{
     font-family: 'Fira Sans',monospace;
-    margin: 0px auto;
+    margin: 0px;
     color: #999;
     
 }
@@ -80,8 +80,7 @@ nav li a{
 #list-img{
     margin: 0px;
     padding: 0px;
-    list-style: none;
-    
+    list-style: none;    
 }
 
 #list-img li{
@@ -92,9 +91,11 @@ nav li a{
     color: #bdc3c7;
 }
 
+
 #list-img li a p{
     margin: 0px;
     padding: 5%;
+    word-wrap: break-word;
     
 }
 
