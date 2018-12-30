@@ -1,4 +1,8 @@
-
+@media screen and (max-width: 479px){
+	#gallery li:nth-child(2n){
+		clear:right;
+	}
+}
 @media screen and (min-width: 480px){
 	
 	/* 
@@ -23,6 +27,8 @@
 	#gallery li:nth-child(3n+1){
 		clear:left;
 	}
+	
+	
 	
 	/*
 	================== ABOUT PAGE ==============
