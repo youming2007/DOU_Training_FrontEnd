@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>	
+		<label>Ask yes/no questions</label>
+		<input type="text" id="text_quest" onkeyup="myfun();">
+		<p id="result">Questions usally containt a questions mark.;</p>
+</body>
+<script>
+	function myfun(){
+		var text =document.getElementById('text_quest').value;
+		document.getElementById('result').innerHTML='Waiting for you to stop typing...';
+		setTimeout(function main() {
+		if(text.lastIndexOf('?')==-1)
+		{
+			document.getElementById('result').innerHTML='Questions usally containt a questions mark.;';
+			if(text=='')
+				text=event.key;
+		}
+		else
+		{
+			if(text.slice(-1)!='?')
+			{
+				document.getElementById('result').innerHTML='must question mark at end question.;';	
+			}
+			else
+			{
+				fetch('https://yesno.wtf/api')
+				.then(function(response) {
+	    		return response.json();
+	  			})
+				.then(function(myJson) {
+				 if( myJson.answer=='yes')
+				 {
+				 	document.getElementById('result').innerHTML='yes';
+				 }
+		   		 else
+		   		 {
+		   		 	document.getElementById('result').innerHTML='Thinking...';
+		   		 }
+			});
+		}}},500)
+	}
+</script>
+</html>
