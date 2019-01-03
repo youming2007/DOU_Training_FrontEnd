@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Demo</title>
+        <style>
+            .wrapper {
+                margin: auto;
+                width: 50%;
+                border: 1px solid black;
+                padding: 10px;
+                line-height: 1.75em;
+            }
+
+            #txtResult {
+                display: inline;
+                font-weight: bold;
+            }
+
+            #txtQuestion {
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            Ask a yes/no question:
+            <input
+                type="text"
+                id="txtQuestion"
+                name="txtQuestion"
+                onkeyup="checkTyping(this)"
+            />
+            <br />
+            Result:
+            <p id="txtResult">Questions usually contain a question mark. ;-)</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
