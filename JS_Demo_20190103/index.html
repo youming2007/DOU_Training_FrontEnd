@@ -7,19 +7,25 @@
 </head>
 <body>	
 		<label>Ask yes/no questions</label>
-		<input type="text" id="text_quest" onkeyup="myfun();">
+		<input type="text" id="text_quest" onkeypress="start();" onkeydown="start();">
 		<p id="result">Questions usally containt a questions mark.;</p>
 </body>
 <script>
-	function myfun(){
-		var text =document.getElementById('text_quest').value;
+	function start() {
+		var input =document.getElementById('text_quest')
+		if(event.type=="keydown" && event.keyCode==8)	
+			myfun(input);
+		else if(event.type=='keypress' && event.charCode!=0)
+			myfun(input);
+	}
+
+	function myfun(gt){
 		document.getElementById('result').innerHTML='Waiting for you to stop typing...';
 		setTimeout(function main() {
+		var text =gt.value;
 		if(text.lastIndexOf('?')==-1)
 		{
 			document.getElementById('result').innerHTML='Questions usally containt a questions mark.;';
-			if(text=='')
-				text=event.key;
 		}
 		else
 		{
