@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Ask a yes/no question: <input type="text" id="input" />
+<p id="result">Question usually contain a question mark :))</p>
+<script>
+	let textInput = document.getElementById('input');
+    let pResult = document.getElementById('result');
+	let timeout = null;
+   
+	textInput.onkeydown = function (e) {
+	  pResult.innerHTML="Waiting for you to stop tying..."
+      clearTimeout(timeout);
+      timeout = setTimeout(function () {
+          console.log('Input Value:', textInput.value);
+      	if(textInput.value.slice(-1) == '?'){
+        	const url = 'https://yesno.wtf/api';
+            pResult.innerHTML= "Thinking";
+            fetch(url).then( (dataPromise) => dataPromise.text())
+            .then(data => {
+            console.log(JSON.parse(data));
+            let dataJson = JSON.parse(data);
+            pResult.innerHTML= dataJson.answer;
+            })
+            .catch((err) => {
+            	pResult.innerHTML= "error";
+            })
+        }else{
+        	 pResult.innerHTML="Question usually contain a question mark";
+        }
+      }, 500);
+	};
+</script>
+</body>
+</html>
