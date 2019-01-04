@@ -12,10 +12,11 @@ function stopTyping() {
     endChar == '?' ? callApis() : document.getElementById("content").innerHTML = "Question usually contain a question mark ;-)";
 }
 async function callApis() {
+    document.getElementById("content").innerHTML = 'Thinking...'
     let response = await fetch('https://yesno.wtf/api');
     let dataResult = await response.json();
     dataResult.answer == 'yes' ? document.getElementById("content").innerHTML = 'Yes' :
-        document.getElementById("content").innerHTML = 'Thinking...'
+        document.getElementById("content").innerHTML = 'No'
 
 
 }
